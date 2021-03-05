@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic Numbers</title>
+        <link rel="stylesheet" href="numerology.css" type="text/css" />
+        <script defer src="numerology.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Josefin+Sans:wght@200;300;700&display=swap" \
+        rel="stylesheet">
+    </head>
+    <body>
+        <div id="title">Magic Numbers</div>>
+        <nav id="menu">
+            <a class="nav" style="color: #c2c2c2; border-color: #c2c2c2;" href="home.html">find your number</a>
+            <a class="nav" href="zodiac.html">daily horoscope</a>
+        </nav>
+        <hr/>
+        <div id="nameInput">
+            <p id="prompt">Enter your full name:</p>
+            <input id="input" type="text"/>
+            <br/>
+            <span id="errorSpan"></span>
+            <p id="button" onclick="getNumber()">Submit</p>
+        </div>
+        <div id=displayName></div>
+        <table id="result">
+            <tr>
+                <td id="number"></td>
+                <td id="meaning"></td>
+            </tr>
+        </table>
+        <hr/>
+        <div>
+            <p id="numCalcQues">The numbers are calculated by summing up the 
+                numbers that each letter falls under in the Hebrew Numerology Chart:
+            </p>
+            <table id="hebrewCodeTable">
+                <tr id="titleRow">
+                    <td class="codeData">1</td>
+                    <td class="codeData">2</td>
+                    <td class="codeData">3</td>
+                    <td class="codeData">4</td>
+                    <td class="codeData">5</td>
+                    <td class="codeData">6</td>
+                    <td class="codeData">7</td>
+                    <td class="codeData">8</td>
+                </tr>
+                <tr>
+                    <td class="codeData">A</td>
+                    <td class="codeData">B</td>
+                    <td class="codeData">C</td>
+                    <td class="codeData">D</td>
+                    <td class="codeData">E</td>
+                    <td class="codeData">U</td>
+                    <td class="codeData">O</td>
+                    <td class="codeData">F</td>
+                </tr>
+                <tr>
+                    <td class="codeData">I</td>
+                    <td class="codeData">K</td>
+                    <td class="codeData">G</td>
+                    <td class="codeData">M</td>
+                    <td class="codeData">H</td>
+                    <td class="codeData">V</td>
+                    <td class="codeData">Z</td>
+                    <td class="codeData">P</td>
+                </tr>
+                <tr>
+                    <td class="codeData">Q</td>
+                    <td class="codeData">R</td>
+                    <td class="codeData">L</td>
+                    <td class="codeData">T</td>
+                    <td class="codeData">N</td>
+                    <td class="codeData">W</td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                </tr>
+                <tr>
+                    <td class="codeData">J</td>
+                    <td class="codeData"></td>
+                    <td class="codeData">S</td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                    <td class="codeData">X</td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                </tr>
+                <tr>
+                    <td class="codeData">Y</td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                    <td class="codeData"></td>
+                </tr>
+            </table>
+            <table class="meaningsTable">
+                <tr>
+                    <td class="numberMeanings">1</td>
+                    <td class="meaning">is the pioneer, the leader, strong-willed and sometimes self-centered. 1 is also associated with 
+                        material wealth, loneliness and isolation.</td>
+                    <td class="numberMeanings">2</td>
+                    <td class="meaning">is the number of passive, receptive people, kind and sensitive, but who often get their own 
+                        way by gentle persuasion. It is also linked to psychic powers.</td>
+                </tr>
+                <tr>
+                    <td class="numberMeanings">3</td>
+                    <td class="meaning">is a potent lucky number, representing extrovert, creative, and witty people. 
+                        They may be extravagant and unable to persevere at one thing for long.</td>
+                    <td class="numberMeanings">4</td>
+                    <td class="meaning">is for dependable, loyal, hard-working people who are good organizers. 4 people are the
+                         guardian angels, fair in all their dealings, and often pay a high price for any success they achieve. </td>
+                </tr>
+                <tr>
+                    <td class="numberMeanings">5</td>
+                    <td class="meaning">is the number of radical, fast-moving people, curious and impulsive, who hate to be tied down. 
+                        5 is also the number of sex and can lead to problematic relationships.</td>
+                    <td class="numberMeanings">6</td>
+                    <td class="meaning">.is the perfect number, and represents harmony, beauty, sincerity, and affection. 6 people 
+                        are creative and artistic, but they can sometimes be fussy and a little conceited. </td>
+                </tr>
+                <tr>
+                    <td class="numberMeanings">7</td>
+                    <td class="meaning">is the magical number, representing the scholar an the mystic, the dignified and the self-possessed.
+                         7 people may appear aloof, as they have difficulty putting their thoughts into words.</td>
+                    <td class="numberMeanings">8</td>
+                    <td class="meaning">symbolizes intuition, prosperity, and organization. Solid, strong, and fertile, 8 people’s 
+                        success is built on hard work, which can make them seem pessimistic. </td>
+                </tr>
+                <tr>
+                    <td class="numberMeanings">9</td>
+                    <td class="meaning">is for intellectuals and idealists. It is a number of great strength, self-discipline, and ambition. 
+                        9 people may seek the limelight and be jealous or fickle.</td>
+                    <td class="numberMeanings">11</td>
+                    <td class="meaning">is the number of people who are idealists. 11 people have a strong vocation for their work
+                         and often suffer for the sake of others.</td>
+                </tr>
+                <tr>
+                    <td class="numberMeanings">22</td>
+                    <td class="meaning">is the master number and incorporates the supreme qualities and attributes of all other numbers.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="credit">Numerology from 'The Book of Spells' by Nicola de Pulford</div>
+    </body>
+</html>

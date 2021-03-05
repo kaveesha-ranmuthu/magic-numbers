@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic Numbers</title>
+        <link rel="stylesheet" href="numerology.css" type="text/css" />
+        <script defer src="numerology.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Josefin+Sans:wght@200;300;700&display=swap" \
+        rel="stylesheet">
+    </head>
+    <body>
+        <div id="title">Magic Numbers</div>>
+        <nav id="menu">
+            <a class="nav" href="home.html">find your number</a>
+            <a class="nav" style="color: #c2c2c2; border-color: #c2c2c2;" href="zodiac.html">daily horoscope</a>
+        </nav>
+        <hr/>
+        <div id="dropDown">
+            <button id="dropButton">Choose your sign...</button>
+            <div id="zodiacOptions">
+              <a onclick="fetchZodiac('aries')">Aries</a>
+              <a onclick="fetchZodiac('taurus')">Taurus</a>
+              <a onclick="fetchZodiac('gemini')">Gemini</a>
+              <a onclick="fetchZodiac('cancer')">Cancer</a>
+              <a onclick="fetchZodiac('leo')">Leo</a>
+              <a onclick="fetchZodiac('virgo')">Virgo</a>
+              <a onclick="fetchZodiac('libra')">Libra</a>
+              <a onclick="fetchZodiac('scorpio')">Scorpio</a>
+              <a onclick="fetchZodiac('sagittarius')">Sagittarius</a>
+              <a onclick="fetchZodiac('capricorn')">Capricorn</a>
+              <a onclick="fetchZodiac('aquarius')">Aquarius</a>
+              <a onclick="fetchZodiac('pisces')">Pisces</a>
+            </div>
+        </div>
+
+        <div id="horoContainer">
+            <div id="horoscope">
+              <span id="close">&times;</span>
+              <span id="zodiacSign"></span><br/>
+              <span id="dates"></span>
+              <p id="text"></p>
+              <span id="luckyN"></span>
+              <span id="luckyT"></span>
+            </div>
+        </div>
+    </body>
+</html>

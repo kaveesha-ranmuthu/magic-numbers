@@ -1,0 +1,313 @@
+html {
+  background-color: #141414;
+  overflow-y: scroll;
+}
+
+#title {
+  text-align: center;
+  color: #c2c2c2;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+.nav {
+  color: #838388;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+  border: 1px solid #838383;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.nav:hover {
+  color: #c2c2c2;
+  border-color: #c2c2c2;
+}
+
+#menu {
+  text-align: center;
+  padding: 15px 0px 40px 0px;
+}
+
+#prompt {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #c2c2c2;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+#nameInput {
+  padding-top: 20px;
+  text-align: center;
+}
+
+input {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: transparent;
+  border: 1px solid #838388;
+  width: 200px;
+  height: 20px;
+  color: #c2c2c2;
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+  color: #c2c2c2;
+}
+
+input:hover {
+  border-color: #c2c2c2;
+}
+
+#button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #c2c2c2;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+}
+
+#button:hover {
+  color: #838388;
+  border-color: #838383;
+  cursor: pointer;
+}
+
+hr {
+  background-color: #3f3f3f;
+  height: 1px;
+  border: none;
+  width: 50%;
+}
+
+#errorSpan {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #838383;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+::-moz-selection {
+  background: #afafaf;
+}
+
+::-webkit-selection {
+  background: #afafaf;
+}
+
+::selection {
+  background: #afafaf;
+}
+
+#result {
+  color: #c2c2c2;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#number,
+.numberMeanings {
+  font-size: 80px;
+  padding: 30px;
+}
+
+#displayName {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #c2c2c2;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+}
+
+.meaningsTable {
+  color: #c2c2c2;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.meaning {
+  color: #c2c2c2;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.credit {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #777777;
+  letter-spacing: 1px;
+  font-size: 11px;
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+#numCalcQues {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #c2c2c2;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+#hebrewCodeTable {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.codeData {
+  padding: 10px;
+}
+
+#titleRow {
+  font-weight: 700;
+}
+
+#dropButton {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  background-color: transparent;
+  width: 220px;
+  color: #c2c2c2;
+  padding: 10px;
+  text-align: left;
+  border: none;
+}
+
+#dropDown {
+  width: 220px;
+  margin: 40px auto 0px auto;
+  text-align: center;
+  border: 1px solid #838388;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-bottom: 50px;
+}
+
+#zodiacOptions {
+  display: none;
+}
+
+#zodiacOptions a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #c2c2c2;
+  margin: 0 auto;
+  text-align: left;
+  display: block;
+  width: 198px;
+  background-color: transparent;
+  padding: 10px;
+  border-collapse: separate;
+}
+
+#zodiacOptions a:hover {
+  color: #838383;
+  cursor: pointer;
+}
+
+#dropDown:hover #zodiacOptions {
+  display: block;
+}
+
+#dropButton:hover {
+  border-color: transparent;
+  color: #838383;
+  border-bottom: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+#horoContainer {
+  display: none;
+  font-family: "Josefin Sans", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+}
+
+#horoscope {
+  margin: 3% auto;
+  padding: 40px 20px 20px 20px;
+  border: 1px solid #838383;
+  width: 50%;
+  color: #c2c2c2;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+#text {
+  width: 95%;
+}
+
+#zodiacSign {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#dates {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #838383;
+}
+
+#luckyN {
+  padding-right: 20px;
+}
+
+#close {
+  color: #c2c2c2;
+  float: right;
+  font-size: 40px;
+}
+
+#close:hover,
+:focus {
+  color: #838383;
+  text-decoration: none;
+  cursor: pointer;
+}
