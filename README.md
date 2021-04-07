@@ -2,7 +2,7 @@
 Provides users with personalised astrology and numerology information.
 
 ## Demo
-magic-numbers.netlify.app
+https://magic-numbers.netlify.app
 
 ## Technologies
 - HTML
